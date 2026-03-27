@@ -1,6 +1,6 @@
 export const Hero = () => {
   return (
-    <section className="min-h-screen bg-dark relative flex items-center justify-start">
+    <section className="min-h-screen bg-dark relative flex items-center justify-center">
       <div className="hero-bg" />
       <div className="hero-pattern" />
       {/* Hero Content */}
