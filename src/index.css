@@ -40,4 +40,94 @@
   .animate-bump {
     animation: bump 0.3s ease-in;
   }
+
+  .hero-bg {
+    position: absolute;
+    inset: 0;
+    background:
+      radial-gradient(
+        ellipse 60% 80% at 70% 50%,
+        rgba(192, 57, 43, 0.15) 0%,
+        transparent 60%
+      ),
+      radial-gradient(
+        ellipse 40% 60% at 20% 80%,
+        rgba(201, 151, 42, 0.08) 0%,
+        transparent 50%
+      );
+  }
+
+  .hero-pattern {
+    position: absolute;
+    inset: 0;
+    opacity: 0.03;
+    background-image: repeating-linear-gradient(
+      45deg,
+      var(--color-cream) 0,
+      var(--color-cream) 1px,
+      transparent 0,
+      transparent 50%
+    );
+    background-size: 20px 20px;
+  }
+
+  .hero-label::before {
+    content: "";
+    display: block;
+    width: 32px;
+    height: 1px;
+    background: var(--color-gold);
+  }
+
+  .hero-pizza {
+    position: absolute;
+    right: -40px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 420px;
+    opacity: 0.12;
+    user-select: none;
+    pointer-events: none;
+  }
+
+  .btn-primary {
+    background: var(--color-red);
+    color: #fff;
+    border: none;
+    padding: 1rem 2rem;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    border-radius: 2px;
+    cursor: pointer;
+    transition:
+      background 0.2s,
+      transform 0.15s;
+    letter-spacing: 0.02em;
+  }
+
+  .btn-primary:hover {
+    background: var(--color-red-light);
+    transform: translateY(-1px);
+  }
+
+  .btn-secondary {
+    background: transparent;
+    color: rgba(245, 240, 232, 0.8);
+    border: 1px solid rgba(245, 240, 232, 0.25);
+    padding: 1rem 2rem;
+    font-family: "DM Sans", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    border-radius: 2px;
+    cursor: pointer;
+    transition:
+      border-color 0.2s,
+      color 0.2s;
+  }
+
+  .btn-secondary:hover {
+    border-color: rgba(245, 240, 232, 0.6);
+    color: var(--color-cream);
+  }
 }
