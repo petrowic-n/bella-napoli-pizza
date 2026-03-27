@@ -4,7 +4,7 @@ export const Hero = () => {
       <div className="hero-bg" />
       <div className="hero-pattern" />
       {/* Hero Content */}
-      <div className="relative container mx-auto px-4">
+      <div className="relative container mx-auto px-4 max-w-275">
         {/* Hero label */}
         <div className="hero-label flex items-center gap-2.5">
           <span className=" text-gold text-sm md:text-lg tracking-widest  font-medium uppercase">
