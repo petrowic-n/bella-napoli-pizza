@@ -5,17 +5,18 @@
 // ─────────────────────────────────────────
 
 export const CATEGORIES = [
-  { id: "all",     label: "All" },
+  { id: "all", label: "All" },
   { id: "classic", label: "Classic" },
   { id: "special", label: "Special" },
-  { id: "veggie",  label: "Veggie" },
+  { id: "veggie", label: "Veggie" },
 ];
 
 export const PIZZAS = [
   {
     id: 1,
     name: "Margherita",
-    description: "San Marzano tomato, fior di latte, fresh basil, extra virgin olive oil.",
+    description:
+      "San Marzano tomato, fior di latte, fresh basil, extra virgin olive oil.",
     price: 10,
     emoji: "🍕",
     category: "classic",
@@ -39,7 +40,8 @@ export const PIZZAS = [
   {
     id: 4,
     name: "Nduja & Honey",
-    description: "Spreadable Calabrian 'nduja, fresh ricotta, wildflower honey, rocket.",
+    description:
+      "Spreadable Calabrian 'nduja, fresh ricotta, wildflower honey, rocket.",
     price: 15,
     emoji: "🍯",
     category: "special",
@@ -71,7 +73,8 @@ export const PIZZAS = [
   {
     id: 8,
     name: "Funghi e Tartufo",
-    description: "Mixed wild mushrooms, black truffle paste, fontina, rosemary.",
+    description:
+      "Mixed wild mushrooms, black truffle paste, fontina, rosemary.",
     price: 16,
     emoji: "🍄",
     category: "veggie",
@@ -79,7 +82,8 @@ export const PIZZAS = [
   {
     id: 9,
     name: "Pomodorini Confit",
-    description: "Slow-roasted cherry tomatoes, stracciatella, fresh basil, capers.",
+    description:
+      "Slow-roasted cherry tomatoes, stracciatella, fresh basil, capers.",
     price: 13,
     emoji: "🍅",
     category: "veggie",
@@ -97,7 +101,8 @@ export const FEATURES = [
     id: 2,
     icon: "🌿",
     title: "Local Ingredients",
-    description: "Sourced from farms within 50km. What's fresh dictates the menu.",
+    description:
+      "Sourced from farms within 50km. What's fresh dictates the menu.",
   },
   {
     id: 3,
@@ -109,7 +114,8 @@ export const FEATURES = [
     id: 4,
     icon: "🧑‍🍳",
     title: "Family Recipe",
-    description: "Three generations of dough. Nothing written down — all in our hands.",
+    description:
+      "Three generations of dough. Nothing written down — all in our hands.",
   },
 ];
 
@@ -180,3 +186,9 @@ export const RESTAURANT_INFO = {
   phone: "+39 081 555 0187",
   foundedYear: 1987,
 };
+
+export const navLinks = [
+  { href: "#menu", label: "Menu" },
+  { href: "#ourstory", label: "Our Story" },
+  { href: "#reviews", label: "Reviews" },
+];

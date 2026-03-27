@@ -1,8 +1,14 @@
+import { Navbar } from "@/layout/Navbar";
+import { Hero } from "@/sections/Hero";
+
 function App() {
   return (
-    <>
-      <section></section>
-    </>
+    <div className="min-h-screen overflow-x-hidden">
+      <Navbar />
+      <main>
+        <Hero />
+      </main>
+    </div>
   );
 }
 

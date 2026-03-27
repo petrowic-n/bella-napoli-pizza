@@ -1,11 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap");
 @import "tailwindcss";
 
 @theme {
   --color-cream: #f5f0e8; /* Page background, text on dark */
-  --color-dark: #1A1208; /* Navbar, Hero, footer, dark sections */
-  --color-red: #C0392B; /* Primary buttons, accents, section labels */
-  --color-red-light: #E8503F; /* Button hover states */
-  --color-gold: #C9972A; /* Logo accent, hero label, star ratings, order number */
-  --color-muted: #6B5B45; /* Body text, descriptions, placeholders */
-  --color-border: rgba(26,18,8,0.12); /* All borders and dividers */
+  --color-dark: #1a1208; /* Navbar, Hero, footer, dark sections */
+  --color-red: #c0392b; /* Primary buttons, accents, section labels */
+  --color-red-light: #e8503f; /* Button hover states */
+  --color-gold: #c9972a; /* Logo accent, hero label, star ratings, order number */
+  --color-muted: #6b5b45; /* Body text, descriptions, placeholders */
+  --color-border: rgba(26, 18, 8, 0.12); /* All borders and dividers */
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  button {
+    cursor: pointer;
+  }
+
+  body {
+    font-family: "DM Sans", sans-serif;
+    background: var(--color-cream);
+  }
+}
+
+@layer utilities {
+  @keyframes bump {
+    0%,
+    100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.4);
+    }
+  }
+
+  .animate-bump {
+    animation: bump 0.3s ease-in;
+  }
 }
