@@ -1,3 +1,11 @@
 @import "tailwindcss";
 
-@theme {}
+@theme {
+  --color-cream: #f5f0e8; /* Page background, text on dark */
+  --color-dark: #1A1208; /* Navbar, Hero, footer, dark sections */
+  --color-red: #C0392B; /* Primary buttons, accents, section labels */
+  --color-red-light: #E8503F; /* Button hover states */
+  --color-gold: #C9972A; /* Logo accent, hero label, star ratings, order number */
+  --color-muted: #6B5B45; /* Body text, descriptions, placeholders */
+  --color-border: rgba(26,18,8,0.12); /* All borders and dividers */
+}
